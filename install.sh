@@ -14,6 +14,6 @@ curl -o Tomato-Novel-Downloader-Lite.zip "https://ghproxy.net/https://github.com
 unzip -o -d ~/storage/downloads Tomato-Novel-Downloader-Lite.zip
 #unzip
 cd ~/storage/downloads/Tomato-Novel-Downloader-Lite-main
-sed -i '$ a\alias fq="cd ~/storage/downloads/Tomato-Novel-Downloader-Lite-main && python ./2.py"' ~/.bashrc
+sed -i '$ a\alias tndl="cd ~/storage/downloads/Tomato-Novel-Downloader-Lite-main && python ./2.py"' ~/.bashrc
 #environment variable
 python 2.py
