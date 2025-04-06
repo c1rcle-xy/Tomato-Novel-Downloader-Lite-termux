@@ -8,7 +8,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip install cython wheel
 CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install lxml
 #install lxml
-pip install requests lxml tqdm beautifulsoup4
+pip install requests lxml tqdm beautifulsoup4 fake-useragent
 echo "Download from the GitHub mirror. If you cannot download it, you can use the global_install.sh script instead."
 curl -o Tomato-Novel-Downloader-Lite.zip "https://ghproxy.net/https://github.com/Dlmily/Tomato-Novel-Downloader-Lite/archive/refs/heads/main.zip" || { echo "error,something went wrong"; exit 1; }
 unzip -o -d ~/storage/downloads Tomato-Novel-Downloader-Lite.zip
