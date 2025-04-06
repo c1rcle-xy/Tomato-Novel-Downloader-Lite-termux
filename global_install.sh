@@ -6,7 +6,7 @@ pkg install python libxml2 libxslt pkg-config openssl -y
 pip install cython wheel
 CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install lxml
 #install lxml
-pip install requests lxml tqdm beautifulsoup4
+pip install requests lxml tqdm beautifulsoup4 fake-useragent
 echo "Download from the GitHub. If you cannot download it, you can use the install.sh script instead."
 curl -o Tomato-Novel-Downloader-Lite.zip "https://github.com/Dlmily/Tomato-Novel-Downloader-Lite/archive/refs/heads/main.zip" || { echo "error,something went wrong"; exit 1; }
 unzip -o -d ~/storage/downloads Tomato-Novel-Downloader-Lite.zip
